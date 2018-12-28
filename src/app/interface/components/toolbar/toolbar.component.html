@@ -1,0 +1,23 @@
+<mat-toolbar color="primary">
+
+  <button mat-button class="sidenav-toggle" (click)="toggleSidenav.emit()">
+    <mat-icon>menu</mat-icon>
+  </button>
+
+  <span>Web Admin</span>
+
+  
+<span class="example-spacer"></span>
+
+<button mat-button [matMenuTriggerFor]="menu">
+  <mat-icon>more_vert</mat-icon>  
+</button>
+<mat-menu #menu="matMenu">
+  <button mat-menu-item (click)="toggleTheme.emit()">Change Theme</button>
+  <button mat-menu-item (click)="changeDirection.emit()">Right to Left</button>
+  <!-- <button mat-menu-item [routerLink]="['/demo']" routerLinkActive="demo" >Right to Left</button> -->
+  
+</mat-menu>
+
+
+</mat-toolbar>
