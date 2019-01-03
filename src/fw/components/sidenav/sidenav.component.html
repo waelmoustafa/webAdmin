@@ -3,25 +3,27 @@
   <mat-sidenav #sidenav class="app-sidenav mat-elevation-z10"
                [opened]="!isScreenSmall()"
                [mode]="isScreenSmall() ? 'over' : 'side'">
-    <mat-toolbar color="primary">
+    <mat-toolbar color="primary" class="mat-elevation-z10">
       Web Admin
     </mat-toolbar>
-    <!-- Main Menu -->
+    <!-- Start Side Menu -->
     <mat-nav-list> 
       <mat-list-item>Menu 1</mat-list-item>
       <mat-list-item>Menu 2</mat-list-item>
       <mat-list-item>Menu 3</mat-list-item>
       <mat-list-item>Menu 4</mat-list-item>
     </mat-nav-list>
+    <!-- End Side Menu -->
   </mat-sidenav>
 
   <div class="app-sidenav-content">
-    <app-toolbar (toggleTheme)="toggleTheme()" 
+    <app-toolbar (toggleTheme)="toggleTheme()" class="mat-elevation-z10"
       (changeDirection)="changeDirection()" 
       (toggleSidenav)="sidenav.toggle()">
     </app-toolbar>
     <div class="wrapper">
       <router-outlet></router-outlet>
+      routing here
     </div>
   </div>
 

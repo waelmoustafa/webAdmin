@@ -3,8 +3,8 @@ import { Routes, RouterModule } from '@angular/router';
 
 
 const routes: Routes = [
-  { path: 'admin', loadChildren: './interface/admin-ui.module#AdminUIModule' },
-  { path: '**', redirectTo: 'admin' }
+  //{ path: 'admin', loadChildren: './fw/fw.module#FWModule' },
+  //{ path: '**', redirectTo: 'admin' }
 ];
 
 @NgModule({

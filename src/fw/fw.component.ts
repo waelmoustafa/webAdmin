@@ -1,13 +1,13 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-admin-ui-app',
+  selector: 'fw-framework',
   template: `
    <app-sidenav></app-sidenav>
 `,
   styles: []
 })
-export class AdminUiAppComponent implements OnInit {
+export class FWComponent implements OnInit {
 
   constructor() { }
 
